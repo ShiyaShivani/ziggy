@@ -1,5 +1,5 @@
 const mongoose=require('mongoose');
-const mongoURI='mongodb+srv://shiya:12345@cluster0.kaspyxb.mongodb.net/Ziggy?retryWrites=true&w=majority'
+const mongoURI='mongodb+srv://shiya:password@cluster0.kaspyxb.mongodb.net/Ziggy?retryWrites=true&w=majority'
 
 module.exports = function (callback) {
     mongoose.connect(mongoURI, { useNewUrlParser: true }, async (err, result) => {
